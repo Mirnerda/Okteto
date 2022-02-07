@@ -15,7 +15,7 @@ services:
             - /home
         resources:
           cpu: 1000m
-          memory: 4072Mi
+          memory: 3072Mi
           storage:
             size: 5Gi
             class: standard
