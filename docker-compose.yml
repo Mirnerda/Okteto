@@ -6,7 +6,7 @@ services:
         ports:
             - 6080:6080
         environment: 
-            - VNC_PASSWD=god123:)
+            - VNC_PASSWD=god123
             - GEOMETRY=1280x768
             - TZ=Asia/Ho_Chi_Minh
             - DEPTH=24
