@@ -3,9 +3,7 @@ services:
         public: true
         container_name: tzchz
         image: imlala/ubuntu-xfce-vnc-novnc:latest
-        imagePullPolicy: Always
         securityContext:
-          privileged: true
           capabilities:
             add: ["NET_ADMIN","NET_RAW"]
         ports:
