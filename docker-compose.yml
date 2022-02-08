@@ -3,8 +3,17 @@ services:
         public: true
         container_name: tzchz
         image: imlala/ubuntu-xfce-vnc-novnc:latest
+        imagePullPolicy: Always
+        securityContext:
+          privileged: true
+          capabilities:
+            add: ["NET_ADMIN","NET_RAW"]
         ports:
             - 6080:6080
+            - 20
+            - 21
+            - 990
+            - 40000:50000
         environment: 
             - VNC_PASSWD=god123
             - GEOMETRY=1280x768
@@ -19,5 +28,3 @@ services:
           storage:
             size: 5Gi
             class: standard
-cap_add:
-- NET_ADMIN
