@@ -5,10 +5,6 @@ services:
         image: imlala/ubuntu-xfce-vnc-novnc:latest
         ports:
             - 6080:6080
-            - 20
-            - 21
-            - 990
-            - 40000:50000
         environment: 
             - VNC_PASSWD=god123
             - GEOMETRY=1280x768
