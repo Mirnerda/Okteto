@@ -3,9 +3,6 @@ services:
         public: true
         container_name: tzchz
         image: imlala/ubuntu-xfce-vnc-novnc:latest
-        securityContext:
-          capabilities:
-            add: ["NET_ADMIN","NET_RAW"]
         ports:
             - 6080:6080
             - 20
